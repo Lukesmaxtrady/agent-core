@@ -1,0 +1,141 @@
+2025-07-06 20:01:34,741 INFO Session log saved.
+2025-07-06 20:01:50,014 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 430, in main
+    devops_fixer_main()
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 140, in main_entry
+    from agent.main import choose_app
+ModuleNotFoundError: No module named 'agent.main'
+
+2025-07-06 20:01:50,014 INFO Error: No module named 'agent.main'
+2025-07-06 20:05:01,737 INFO Session log saved.
+2025-07-06 20:11:29,927 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 430, in main
+    devops_fixer_main()  # NOTE: NO app arg! Fixes AI agents only
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 150, in main_entry
+    auto_devops_fix()
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 133, in auto_devops_fix
+    auto_fix_code(agent_dir)
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 51, in auto_fix_code
+    run_command(cmd, cwd=agent_dir)
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 24, in run_command
+    result = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [WinError 267] The directory name is invalid
+
+2025-07-06 20:11:29,927 INFO Error: [WinError 267] The directory name is invalid
+2025-07-06 20:15:38,382 INFO Session log saved.
+2025-07-06 20:46:17,351 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 430, in main
+    devops_fixer_main()  # NOTE: NO app arg! Fixes AI agents only
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 203, in main_entry
+    auto_devops_fix()
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 173, in auto_devops_fix
+    auto_fix_code(agent_dir)
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 53, in auto_fix_code
+    run_command(cmd, cwd=agent_dir)
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 26, in run_command
+    result = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [WinError 267] The directory name is invalid
+
+2025-07-06 20:46:17,351 INFO Error: [WinError 267] The directory name is invalid
+2025-07-06 20:50:41,658 INFO Session log saved.
+2025-07-06 20:51:23,809 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 430, in main
+    devops_fixer_main()  # NOTE: NO app arg! Fixes AI agents only
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 203, in main_entry
+    auto_devops_fix()
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 173, in auto_devops_fix
+    auto_fix_code(agent_dir)
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 53, in auto_fix_code
+    run_command(cmd, cwd=agent_dir)
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 26, in run_command
+    result = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [WinError 267] The directory name is invalid
+
+2025-07-06 20:51:23,809 INFO Error: [WinError 267] The directory name is invalid
+2025-07-06 20:56:19,745 INFO Session log saved.
+2025-07-06 20:57:07,027 INFO Ran DevOps Quick Fix on AI agent system.
+2025-07-06 21:01:22,423 INFO Session log saved.
+2025-07-06 21:01:38,464 INFO Session log saved.
+2025-07-06 21:05:09,487 INFO Session log saved.
+2025-07-06 21:13:37,730 INFO Ran DevOps Quick Fix on AI agent system.
+2025-07-06 21:13:41,134 INFO Session log saved.
+2025-07-06 21:16:05,129 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 402, in main
+    super_devops_main(app)
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\super_devops_agent.py", line 232, in main_entry
+    from agent.main import choose_app
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\super_devops_agent.py", line 76, in run_agentic_devops
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 128, in auto_devops_fix
+    else:
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 54, in auto_fix_code
+    outputs[name] = output
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\agent\devops_fixer.py", line 22, in run_command
+    logging.basicConfig(
+                     ^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\lukea\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [WinError 267] The directory name is invalid
+
+2025-07-06 21:16:05,129 INFO Error: [WinError 267] The directory name is invalid
+2025-07-06 21:18:41,135 INFO Session log saved.
+2025-07-06 21:19:36,734 INFO Session log saved.
+2025-07-06 21:56:11,869 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 393, in main
+    auto_upgrade_all_agents(
+TypeError: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+
+2025-07-06 21:56:11,869 INFO Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+2025-07-07 16:44:19,030 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 393, in main
+    auto_upgrade_all_agents(
+TypeError: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+
+2025-07-07 16:44:19,033 INFO Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+2025-07-07 16:49:13,621 INFO Session log saved.
+2025-07-07 16:52:44,634 ERROR Traceback (most recent call last):
+  File "C:\Users\lukea\Desktop\AI_AGENTS\AI_SUPERAGENT\main.py", line 393, in main
+    auto_upgrade_all_agents(
+TypeError: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+
+2025-07-07 16:52:44,635 INFO Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+2025-07-07 16:54:13,626 INFO Session log saved.
+2025-07-07 16:59:13,631 INFO Session log saved.
+2025-07-07 17:04:13,635 INFO Session log saved.
+2025-07-07 17:09:13,637 INFO Session log saved.

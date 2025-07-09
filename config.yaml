@@ -1,0 +1,92 @@
+# agent/config.yaml
+
+# =======================
+# Global API Keys & Secrets
+# =======================
+openai_api_key: "your-openai-api-key-here"
+telegram_bot_token: "your-telegram-bot-token"
+telegram_chat_id: "your-telegram-chat-id"
+
+# =======================
+# File Paths & Directories
+# =======================
+paths:
+  base_dir: "."                    # Root project directory (can be relative)
+  apps_dir: "./apps"               # Apps/bots base directory
+  plugins_dir: "./plugins"         # Plugins directory
+  logs_dir: "./logs"               # Root logs directory
+  backups_dir: "./logs/agent_backups"  # Backup folder root
+  incident_logs: "./logs/incident_responder/incident_summaries.json"
+  analytics_logs: "./logs/root_cause_analytics"
+  llm_suggestions_dir: "./logs/llm_suggestions"
+
+# =======================
+# LLM (OpenAI) Configuration
+# =======================
+llm:
+  default_model: "gpt-4o"
+  max_tokens: 1500
+  temperature: 0.1
+  retries: 3
+  retry_backoff_seconds: 2
+  swarm_models: ["gpt-4o", "gpt-4", "gpt-3.5-turbo"]   # Models for swarm voting
+
+# =======================
+# Backup Policy
+# =======================
+backup:
+  retention_count: 5               # Keep last N backups per file
+  auto_prune: true                # Prune old backups automatically
+
+# =======================
+# Event Bus Settings
+# =======================
+event_bus:
+  async_mode: true                # Use asyncio-based event bus
+  thread_pool_workers: 10
+  event_timeout_seconds: 10
+
+# =======================
+# Notification Settings
+# =======================
+notifications:
+  telegram_enabled: true
+  email_enabled: false             # Future: email alerts
+  alert_color: "magenta"           # Color for termcolor notifications
+
+# =======================
+# Agent & Plugin Settings
+# =======================
+agents:
+  super_devops_agent:
+    auto_commit: true
+    test_retry_limit: 3
+  supreme_auditor:
+    approval_mode: true
+  plugin_hot_reload:
+    poll_interval_seconds: 2.0
+
+# =======================
+# Testing Settings
+# =======================
+testing:
+  test_file_min_size: 50
+  max_test_attempts: 3
+  pytest_timeout_seconds: 120
+
+# =======================
+# Docker / Kubernetes / Cloud Deploy Defaults
+# =======================
+deploy:
+  default_cloud: "replit"
+  docker_image: "python:3.10-slim"
+  kubernetes_namespace: "default"
+  ci_cd_enabled: false
+
+# =======================
+# Misc & Feature Toggles
+# =======================
+features:
+  enable_self_healing: true
+  enable_peer_review: true
+  enable_root_cause_analytics: true

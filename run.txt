@@ -1,0 +1,68 @@
+source venv/Scripts/activate
+
+python main.py
+
+1. Standard CLI Launch
+If you want the full, user-friendly, menu-driven experience (onboarding, project wizard, all agents):
+
+From your project root folder, run:
+
+
+python main.py
+This launches your ultra-friendly CLI main menu (with onboarding, help, godlike project wizard, etc.).
+
+All agent features are accessible from the menu.
+
+If you want to re-run onboarding at any time, delete user_state.json or use the menu.
+
+2. God Manager Agent — Scripting/Power Use
+(For automated, batch, or advanced orchestrations.)
+
+You can launch and control the system from any Python script or a REPL:
+
+
+
+from agent.god_manager_agent import GodManagerAgent
+
+god = GodManagerAgent()
+
+# List available workflows and agents:
+god.available_workflows()
+god.list_agents()
+
+# Run a standard workflow (example: build = planner → coder → tester)
+god.run_workflow('build')
+
+# Run the project creation wizard directly:
+god.run_agent('project_wizard_agent')
+
+# Or run any agent by name (see god.list_agents() for names)
+god.run_agent('auto_upgrade_agent')
+3. Project Wizard (Direct)
+If you want to go straight to the project wizard (AI-powered project builder):
+
+python -m agent.project_wizard_agent
+or
+
+python agent/project_wizard_agent.py
+4. For Developers/LLM Coders
+You can call the codegen/LLM agents programmatically (e.g., from a notebook or integration):
+
+from agent.llm_codegen import llm_codegen
+
+result = llm_codegen(
+    prompt="Generate a FastAPI app that returns the current time.",
+    backend="openai",
+    model="gpt-4o"
+)
+print(result)
+5. Plugging the God Manager into your main menu (optional):
+If you want to allow advanced users to access God Mode from the main CLI menu, add an option like:
+
+from agent.god_manager_agent import GodManagerAgent
+
+def god_mode_menu():
+    god = GodManagerAgent()
+    god.available_workflows()
+    # CLI for advanced commands...
+Or just let users launch it directly as above.

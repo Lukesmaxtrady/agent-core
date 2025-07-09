@@ -1,0 +1,27 @@
+[2025-07-06 18:56:58] Listed apps/bots.
+
+
+
+
+
+[2025-07-06 20:01:50] Error: No module named 'agent.main'
+[2025-07-06 20:11:29] Error: [WinError 267] The directory name is invalid
+[2025-07-06 20:46:17] Error: [WinError 267] The directory name is invalid
+[2025-07-06 20:51:23] Error: [WinError 267] The directory name is invalid
+[2025-07-06 20:51:23] Error: [WinError 267] The directory name is invalid
+[2025-07-06 20:57:07] Ran DevOps Quick Fix on AI agent system.
+[2025-07-06 20:51:23] Error: [WinError 267] The directory name is invalid
+[2025-07-06 21:13:37] Ran DevOps Quick Fix on AI agent system.
+[2025-07-06 21:13:37] Ran DevOps Quick Fix on AI agent system.
+[2025-07-06 21:16:05] Error: [WinError 267] The directory name is invalid
+[2025-07-06 21:13:37] Ran DevOps Quick Fix on AI agent system.
+[2025-07-06 21:16:05] Error: [WinError 267] The directory name is invalid
+[2025-07-07 16:44:19] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:44:19] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:52:44] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:44:19] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:52:44] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:44:19] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:52:44] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:44:19] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'
+[2025-07-07 16:52:44] Error: auto_upgrade_all_agents() got an unexpected keyword argument 'explain_upgrade_fn'

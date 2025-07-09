@@ -1,0 +1,21 @@
+name: AI Agent CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run lint
+        run: flake8 agent/
+      - name: Run tests
+        run: pytest agent/
+      - name: Run security check
+        run: bandit -r agent/
